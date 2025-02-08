@@ -11,7 +11,7 @@
             Console.WriteLine("Введите число n");
             string text = Console.ReadLine();
             int n = -1;
-            while (!int.TryParse(text, out n) || n < 0)
+            while (!int.TryParse(text, out n) || n <= 0)
             {
                 Console.WriteLine("Введите число больше нуля.");
                 text = Console.ReadLine();
