@@ -6,7 +6,8 @@
         //их среднее значение.Используйте ключевое слово params
         static void Main(string[] args)
         {
-            Console.WriteLine(Average(5,4,2,0,0,123, 0.213, 0));
+            //Пример использования
+            Console.WriteLine(Average(5, 4, 2, 0, 0, 123, 0.213, 0));
         }
 
         /// <summary>
