@@ -1,9 +1,12 @@
-﻿namespace Task_11_06
+﻿namespace Task_11_07
 {
     internal class Program
     {
-        // Передача массива по значению: Напишите метод, который принимает массив целых чисел и
-        // изменяет его элементы, увеличивая каждый на 1. Проверьте, изменился ли оригинальный массив вне метода.
+        /*
+        Передача массива по ссылке (ref): Напишите метод, который принимает массив целых чисел по
+        ссылке и изменяет его элементы, увеличивая каждый на 1. Проверьте, изменился ли
+        оригинальный массив вне метода.
+        */
 
         static void Main(string[] args)
         {
@@ -17,10 +20,10 @@
 
             // Выводим массив до вызова метода
             Console.WriteLine("Массив до изменений: ");
-            foreach(int el in arr) Console.Write(el + " ");
+            foreach (int el in arr) Console.Write(el + " ");
             Console.WriteLine();
 
-            Increase(arr);
+            Increase(ref arr);
 
             // Выводим массив после вызова метода
             Console.WriteLine("Массив после изменений: ");
@@ -32,7 +35,7 @@
         /// Увеличивает значение каждого элемента массива на единицу.
         /// </summary>
         /// <param name="arr">Массив целых чисел</param>
-        static void Increase(int[] arr)
+        static void Increase(ref int[] arr)
         {
             for (int i = 0; i < arr.Length; i++) arr[i]++;
         }
@@ -43,7 +46,7 @@
         /// <param name="write">Текст для вывода в консоль перед запросом числа.</param>
         /// <param name="onlyPositive">Вернуть только положительное число.</param>
         /// <returns></returns>
-        static int ReadInt(string write = "", bool onlyPositive=false)
+        static int ReadInt(string write = "", bool onlyPositive = false)
         {
             Console.Write(write);
 
