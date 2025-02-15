@@ -26,6 +26,11 @@
             }
         }
 
+        /// <summary>
+        /// Возвращает сгенерированный двумерный массив строчных символов русского алфавита
+        /// </summary>
+        /// <param name="n">Размерность массива</param>
+        /// <returns>char[,]</returns>
         static char[,] GenerateCharArray(int n)
         {
             // Создание массива, заполнение случайными символами
@@ -41,6 +46,11 @@
             return arr;
         }
 
+        /// <summary>
+        /// Выводит двумерный массив символов в консоль
+        /// </summary>
+        /// <param name="arr">Двумерный массив символов</param>
+        /// <returns></returns>
         static void PrintCharArray(char[,] arr)
         {
             // Вывод массива
