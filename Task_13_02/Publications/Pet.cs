@@ -32,6 +32,7 @@ namespace Task_13_02.Publications
             Console.WriteLine($"Возраст: {Age},");
             Console.WriteLine($"Вес: {Math.Round(Weight, 3)},");
             Console.WriteLine($"Состояние здоровья: {HealthStatus}.");
+            Console.WriteLine();
         }
 
 
@@ -61,7 +62,7 @@ namespace Task_13_02.Publications
         {
             if (status == "здоров") isHealthy = true;
             else if (status == "нездоров") isHealthy = false;
-            else Console.WriteLine("Некорректный статус здоровья.");
+            else Console.WriteLine("Некорректный статус здоровья.\n");
         }
 
         public Pet()

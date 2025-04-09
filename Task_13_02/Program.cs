@@ -21,7 +21,15 @@ namespace Task_13_02
             Pet pet1 = new Pet();
             pet1.GetInfo();
 
+            // меняем вес животного
+            pet1.SetWeigth(15); 
+            pet1.GetInfo();
+
             Pet pet2 = new Pet("Bob", "Doberman dog", 5, 12, "здоров");
+            pet2.GetInfo();
+
+            // меняем состояние здоровья
+            pet2.SetHealthStatus("нездоров"); // или pet1.SetHealthStatus(false);
             pet2.GetInfo();
         }
     }
